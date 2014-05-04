@@ -10,12 +10,6 @@ extends RoutesComponent
 with    SessionComponent
 with    ServerComponent
 
-object ServiceManifest {
-
-  def apply(): ServiceManifest =
-
-}
-
 object  DevServices
 extends ServiceManifest
 with    CommonRoutesComponent
