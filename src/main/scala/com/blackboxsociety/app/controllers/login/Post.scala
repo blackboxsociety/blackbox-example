@@ -7,7 +7,7 @@ import com.blackboxsociety.app.services._
 import com.blackboxsociety.mvc.form._
 import com.blackboxsociety.http.routes._
 
-case class Post(implicit services: ServiceManifest) extends Controller {
+case class Post(services: ServiceManifest) extends Controller {
 
   val route = HttpRoute(MethodRoute(HttpPost), PathRoute("/login"))
 
@@ -19,7 +19,7 @@ case class Post(implicit services: ServiceManifest) extends Controller {
     f.map(t =>
       t.validate(
         success => Ok("win bro"),
-        errors => Ok("no win")
+        errors => Ok("no win" + t.errors().toString)
       )
     )
   }

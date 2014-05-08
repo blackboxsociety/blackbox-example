@@ -1,10 +1,10 @@
 package com.blackboxsociety.app
 
-import com.blackboxsociety._
 import com.blackboxsociety.app.services._
 import com.blackboxsociety.app.middleware.global._
 import com.blackboxsociety.mvc.middleware.global._
-import com.blackboxsociety.mvc.middleware.general.EtagCacheMiddleware
+import com.blackboxsociety.mvc.middleware.general._
+import com.blackboxsociety.services._
 
 object Main extends BlackBox {
 

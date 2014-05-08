@@ -8,7 +8,7 @@ import com.blackboxsociety.app.services._
 import com.blackboxsociety.app.views.Home
 import com.blackboxsociety.http.routes._
 
-case class Get(implicit services: ServiceManifest) extends Controller {
+case class Get(services: ServiceManifest) extends Controller {
 
   val route = HttpRoute(MethodRoute(HttpGet), PathRoute("/"))
 
