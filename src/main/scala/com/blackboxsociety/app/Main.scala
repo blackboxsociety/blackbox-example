@@ -4,7 +4,7 @@ import com.blackboxsociety.app.services._
 import com.blackboxsociety.app.middleware.global._
 import com.blackboxsociety.mvc.middleware.global._
 import com.blackboxsociety.mvc.middleware.general._
-import com.blackboxsociety.services._
+import com.blackboxsociety._
 
 object Main extends BlackBox {
 

@@ -21,13 +21,13 @@ object Build extends Build {
     .settings(appSettings: _*)
     .settings(assemblySettings: _*)
     .settings(
-      name                  := "blackbox-example",
-      organization          := "com.blackboxsociety",
-      version               := "0.1.0",
-      scalaVersion          := "2.11.0",
-      licenses              += ("MIT", url("http://opensource.org/licenses/MIT")),
-      resolvers             += "Black Box Society Repository" at "http://dl.bintray.com/blackboxsociety/releases",
-      libraryDependencies   += "com.blackboxsociety" %% "blackbox" % "0.1.1"
+      name                := "blackbox-example",
+      organization        := "com.blackboxsociety",
+      version             := "0.1.0",
+      scalaVersion        := "2.11.0",
+      licenses            += ("MIT", url("http://opensource.org/licenses/MIT")),
+      resolvers           += "Black Box Society Repository" at "http://dl.bintray.com/blackboxsociety/releases",
+      libraryDependencies += "com.blackboxsociety" %% "blackbox-http" % "0.2.0"
     )
 
 }
